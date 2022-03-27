@@ -97,7 +97,7 @@
           aracınızı alırken de satarken de kafanız rahat olur.
         </p>
         <section class="row mx-0 text-center">
-          <section class="col">
+          <section class="col px-1">
             <ul class="list-group text-center mx-0 my-auto mt-4 mb-5">
               <span class="bg-primary h4 text-center text-white py-3 mb-3"
                 >FİYAT TEKLİFİ İÇİN BİLMENİZ GEREKEN ÖZELLİKLER</span
@@ -172,9 +172,6 @@
           <label class="input-group-text">Marka</label>
           <select class="form-select ms-2 rounded-pill">
             <option selected>Marka Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
           </select>
         </section>
       </section>
@@ -183,9 +180,7 @@
           <label class="input-group-text">Seri</label>
           <select class="form-select ms-2 rounded-pill">
             <option selected>Seri Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            {% block seri %} {% endblock %}
           </select>
         </section>
       </section>
@@ -194,9 +189,7 @@
           <label class="input-group-text">Model</label>
           <select class="form-select ms-2 rounded-pill">
             <option selected>Modeli Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            {% block model %} {% endblock %}
           </select>
         </section>
       </section>
@@ -281,7 +274,7 @@
             max="13"
             class="form-control rounded-pill ms-2"
             placeholder="Boya Sayısını Giriniz..."
-            onKeyDown="return false"
+            title="0-13 Arasında Bir Değer Girmelisiniz !"
           />
         </section>
       </section>
@@ -294,7 +287,7 @@
             max="13"
             class="form-control rounded-pill ms-2"
             placeholder="Değişen Sayısını Giriniz..."
-            onKeyDown="return false"
+            title="0-13 Arasında Bir Değer Girmelisiniz !"
           />
         </section>
       </section>

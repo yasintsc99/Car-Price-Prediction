@@ -31,3 +31,14 @@ $(window).scroll(function () {
     px = window.scrollY;
   }
 });
+$("[type='number']").keypress(function (e) {
+  if ($(this).val().length == 2) {
+    if (e.key == "BackSpace") return true;
+    else return false;
+  }
+});
+$("[type='number']").change(function () {
+  if ($(this).val() > 13) {
+    $(this).val(13);
+  }
+});
