@@ -1,0 +1,4 @@
+<option value="">Seçiniz</option>
+{% for seri in series %}
+<option value="{{ seri.pk }}">{{ seri.name }}</option>
+{% endfor %}

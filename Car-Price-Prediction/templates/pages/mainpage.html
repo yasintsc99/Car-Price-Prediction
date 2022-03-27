@@ -1,0 +1,300 @@
+{% extends 'layout.html'%} {% load static %} {% block content %}
+<section
+  id="carouselExampleDark"
+  class="carousel carousel-dark slide mx-0"
+  data-bs-ride="carousel"
+>
+  <section class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+  </section>
+  <section class="carousel-inner">
+    <section class="carousel-item active">
+      <img
+        src="{% static 'photos/araba.jpg' %}"
+        class="d-flex mx-auto w-50 pt-5 mt-5 mb-3"
+        alt="..."
+      />
+      <section
+        class="carousel-caption"
+        style="position: absolute; top: 0px; margin: auto"
+      >
+        <h5 class="mb-5 fw-bold fs-5">
+          ARACINIZIN ÖZELLİKLERİNİ VERİN <br />
+          BİZDE SİZE FİYATINI SÖYLEYELİM
+        </h5>
+      </section>
+    </section>
+    <section class="carousel-item">
+      <img
+        src="{% static 'photos/Markalar.jpg' %}"
+        class="d-flex mx-auto w-50 pt-5 mt-5 mb-3"
+        alt="..."
+      />
+
+      <section
+        class="carousel-caption mx-auto pb-5"
+        style="position: absolute; top: 0px"
+      >
+        <h5 class="fw-bold fs-5">
+          SİSTEMİMİZDE MEVCUT BULUNAN<br />MARKALARIMIZ
+        </h5>
+      </section>
+    </section>
+  </section>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleDark"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+<section class="row mx-0 px-0">
+  <section class="col d-flex justify-content-center pb-5">
+    <a
+      href="#FiyatTahmin"
+      class="btn btn-outline-success rounded-pill fs-5 px-3 fw-bolder mb-5"
+    >
+      Arabanızın Fiyatını Öğrenin
+    </a>
+  </section>
+</section>
+<section class="mt-3" style="background-color: #cfe2ff">
+  <section class="row mx-0">
+    <section class="col">
+      <h2 class="header text- text-center">SİSTEM NASIL ÇALIŞIYOR ?</h2>
+      <article style="color: #6c757d">
+        <p class="fs-4 text-center mt-4 text-dark">
+          Araba severler için düşünülüp geliştirilmiş sistemimizde 25'den fazla
+          markaya ait araç için fiyat sorgulaması yapabilirsiniz. Sitemizde
+          veritabanı bulunmamaktadır. Aşağıdaki listede belirtilen araç
+          özelliklerini bizimle paylaştıktan sonra arkaplanda çalışan makine
+          öğrenmesi modelimiz, aracınız için optimum fiyatı belirler. Bu sayede
+          aracınızı alırken de satarken de kafanız rahat olur.
+        </p>
+        <section class="row mx-0 text-center">
+          <section class="col">
+            <ul class="list-group text-center mx-0 my-auto mt-4 mb-5">
+              <span class="bg-primary h4 text-center text-white py-3 mb-3"
+                >FİYAT TEKLİFİ İÇİN BİLMENİZ GEREKEN ÖZELLİKLER</span
+              >
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN MARKASI
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                VOLKSWAGEN
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN AİT OLDUĞU SERİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                PASSAT
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN MODELİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                1.6 TDI BLUEMOTION COMFORTLINE
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN ÜRETİM YILI
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                2020
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN MOTOR GÜCÜ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                105 HP
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN MOTOR HACMİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                1598 CC
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN YAKIT TİPİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                DİZEL
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN VİTES TİPİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                OTOMATİK
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN KİLOMETRESİ
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                50.000 KM
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN BOYALI PARÇA SAYISI
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                TAMAMI ORJİNAL
+              </li>
+              <li class="list-group-item d-flex fs-5 justify-content-center">
+                ARACIN DEĞİŞEN PARÇA SAYISI
+                <span class="mx-3"> <i class="fas fa-arrow-right"></i></span>
+                1 DEĞİŞEN
+              </li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </section>
+  </section>
+</section>
+<section id="FiyatTahmin" class="container my-auto">
+  <form action="" method="post">
+    <section class="row">
+      <section class="col-lg-4 mb-2 mx-0">
+        <section class="input-group px-1">
+          <label class="input-group-text">Marka</label>
+          <select class="form-select ms-2 rounded-pill">
+            <option selected>Marka Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2 mx-0">
+        <section class="input-group px-1">
+          <label class="input-group-text">Seri</label>
+          <select class="form-select ms-2 rounded-pill">
+            <option selected>Seri Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2 mx-0">
+        <section class="input-group px-1">
+          <label class="input-group-text">Model</label>
+          <select class="form-select ms-2 rounded-pill">
+            <option selected>Modeli Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Yıl</label>
+          <select class="form-select ms-2">
+            <option selected>Yılı Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Motor Gücü</label>
+          <select class="form-select ms-2">
+            <option selected>Motor Gücü Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1 mx-0">
+          <label class="input-group-text">Motor Hacmi</label>
+          <select class="form-select ms-2">
+            <option selected>Motor Hacmi Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Yakıt Tipi</label>
+          <select class="form-select ms-2">
+            <option selected>Yakıt Tipi Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Vites Tipi</label>
+          <select class="form-select ms-2">
+            <option selected>Vites Tipi Seçiniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-4 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Kilometre</label>
+          <select class="form-select ms-2">
+            <option selected>KM Giriniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-lg-6 mb-2">
+        <section class="input-group px-1">
+          <label class="input-group-text">Boya</label>
+          <select class="form-select ms-2">
+            <option selected>Boya Sayısını Giriniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+      <section class="col-lg-6">
+        <section class="input-group px-1">
+          <label class="input-group-text">Değişen</label>
+          <select class="form-select ms-2">
+            <option selected>Değişen Sayısını Giriniz...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </section>
+      </section>
+    </section>
+  </form>
+</section>
+{% endblock %}
