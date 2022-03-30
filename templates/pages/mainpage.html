@@ -1,7 +1,7 @@
 {% extends 'layout.html'%} {% load static %} {% block content %}
 <section
   id="carouselExampleDark"
-  class="carousel carousel-dark slide mx-0"
+  class="carousel carousel-dark slide"
   data-bs-ride="carousel"
 >
   <section class="carousel-indicators">
@@ -21,10 +21,10 @@
     ></button>
   </section>
   <section class="carousel-inner">
-    <section class="carousel-item active">
+    <section class="carousel-item active pt-5">
       <img
         src="{% static 'photos/araba.jpg' %}"
-        class="d-flex mx-auto w-50 pt-5 mt-5 mb-3"
+        class="d-flex mx-auto mt-5 mb-3"
         alt="..."
       />
       <section
@@ -37,10 +37,10 @@
         </h5>
       </section>
     </section>
-    <section class="carousel-item">
+    <section class="carousel-item pt-5">
       <img
         src="{% static 'photos/Markalar.jpg' %}"
-        class="d-flex mx-auto w-50 pt-5 mt-5 mb-3"
+        class="d-flex mx-auto mt-5 mb-3"
         alt="..."
       />
 

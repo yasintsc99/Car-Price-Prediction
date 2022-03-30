@@ -24,7 +24,7 @@ var px = 0;
 $(window).scroll(function () {
   if ($(window).width() >= 992) {
     if (px + 15 < window.scrollY) {
-      $("nav").slideUp("fast");
+      $("nav").slideUp("slow");
     } else if (px - 15 > window.scrollY) {
       $("nav").slideDown("slow");
     }

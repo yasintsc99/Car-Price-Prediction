@@ -11,7 +11,10 @@ body {
   margin-right: 0 !important;
   padding-right: 0 !important;
 }
-
+img {
+  box-shadow: 4px 4px 4px 1px;
+  width: 50%;
+}
 .bg-nav {
   background-image: linear-gradient(
     to right,
@@ -25,7 +28,10 @@ body {
     border-bottom: 4px solid rgba(194, 19, 0, 0.687);
   }
   button.navbar-toggler {
-    margin-right: 2% !important;
+    margin: 2% !important;
+  }
+  a.nav-link {
+    margin-left: 3% !important;
   }
   a.dropdown-toggle:not(:hover) {
     border-bottom: 4px solid transparent;
