@@ -164,13 +164,15 @@
     </section>
   </section>
 </section>
+
 <section id="FiyatTahmin" class="container mb-5">
-  <form action="" method="post">
+  <form action="" method="POST">
+    {%csrf_token%}
     <section class="row">
       <section class="col-lg-4 mb-2 mx-0">
         <section class="input-group px-1">
           <label class="input-group-text">Marka</label>
-          <select class="form-select ms-2 rounded-pill">
+          <select name="Marka" id="Marka" class="form-select ms-2 rounded-pill">
             <option selected>Marka Seçiniz...</option>
           </select>
         </section>
@@ -178,18 +180,16 @@
       <section class="col-lg-4 mb-2 mx-0">
         <section class="input-group px-1">
           <label class="input-group-text">Seri</label>
-          <select class="form-select ms-2 rounded-pill">
+          <select name="Seri" id="Seri" class="form-select ms-2 rounded-pill">
             <option selected>Seri Seçiniz...</option>
-            {% block seri %} {% endblock %}
           </select>
         </section>
       </section>
       <section class="col-lg-4 mb-2 mx-0">
         <section class="input-group px-1">
           <label class="input-group-text">Model</label>
-          <select class="form-select ms-2 rounded-pill">
+          <select name="Model" id="Model" class="form-select ms-2 rounded-pill">
             <option selected>Modeli Seçiniz...</option>
-            {% block model %} {% endblock %}
           </select>
         </section>
       </section>
@@ -198,33 +198,22 @@
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1">
           <label class="input-group-text">Yıl</label>
-          <select class="form-select ms-2">
-            <option selected>Yılı Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+          <select class="form-select ms-2" id="year" name="year"></select>
         </section>
       </section>
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1">
           <label class="input-group-text">Motor Gücü</label>
-          <select class="form-select ms-2">
+          <select class="form-select ms-2" name="Motor_Gucu" id="Motor_Gucu">
             <option selected>Motor Gücü Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
           </select>
         </section>
       </section>
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1 mx-0">
           <label class="input-group-text">Motor Hacmi</label>
-          <select class="form-select ms-2">
+          <select class="form-select ms-2" name="Motor_Hacmi" id="Motor_Hacmi">
             <option selected>Motor Hacmi Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
           </select>
         </section>
       </section>
@@ -233,34 +222,34 @@
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1">
           <label class="input-group-text">Yakıt Tipi</label>
-          <select class="form-select ms-2">
+          <select class="form-select ms-2" name="fuel" id="fuel">
             <option selected>Yakıt Tipi Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="Benzin">Benzin</option>
+            <option value="LPG & Benzin">LPG & Benzin</option>
+            <option value="Dizel">Dizel</option>
           </select>
         </section>
       </section>
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1">
           <label class="input-group-text">Vites Tipi</label>
-          <select class="form-select ms-2">
+          <select class="form-select ms-2" name="vites" id="vites">
             <option selected>Vites Tipi Seçiniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="Otomatik">Otomatik</option>
+            <option value="Yarı Otomatik">Yarı Otomatik</option>
+            <option value="Manuel">Manuel</option>
           </select>
         </section>
       </section>
       <section class="col-lg-4 mb-2">
         <section class="input-group px-1">
           <label class="input-group-text">Kilometre</label>
-          <select class="form-select ms-2">
-            <option selected>KM Giriniz...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+          <input
+            class="rounded-pill form-control ms-2"
+            placeholder="KM Giriniz..."
+            id="KM"
+            name="KM"
+          />
         </section>
       </section>
     </section>
@@ -275,6 +264,8 @@
             class="form-control rounded-pill ms-2"
             placeholder="Boya Sayısını Giriniz..."
             title="0-13 Arasında Bir Değer Girmelisiniz !"
+            id="Boya"
+            name="Boya"
           />
         </section>
       </section>
@@ -288,9 +279,18 @@
             class="form-control rounded-pill ms-2"
             placeholder="Değişen Sayısını Giriniz..."
             title="0-13 Arasında Bir Değer Girmelisiniz !"
+            id="Degisen"
+            name="Degisen"
           />
         </section>
       </section>
+    </section>
+    <section class="row mt-3">
+      <button
+        class="col-3 mx-auto btn btn-outline-danger fw-bolder rounded-pill"
+      >
+        HESAPLA
+      </button>
     </section>
   </form>
 </section>

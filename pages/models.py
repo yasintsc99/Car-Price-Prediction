@@ -1,6 +1,5 @@
-from importlib.resources import path
-from os import name
+from tkinter import CASCADE
 from django.db import models
-from . import views
+from django.db import models
 # Create your models here.
 
